@@ -107,13 +107,13 @@ ResNet18(
 
 I used various augmentation techniques (such as ShiftScaleRotate, Blur, GridDistortion etc.) from [albumentations](https://github.com/albumentations-team/albumentations) to improve training process. Random sampled, denormilized training batch:
 
-![Train samples](train_samples.png)
+![Train samples](assets/train_samples.png)
 
 ## Training results
 
 The goal was to achieve 0.6+ accuracy on the validation set.
 
-![Accuracy history](accuracy_hist.png)
+![Accuracy history](assets/accuracy_hist.png)
 
 ## Classification report
 
@@ -386,10 +386,11 @@ self-propelled-lawn-mower       0.84      0.88      0.86        24
                 macro avg       0.58      0.57      0.56      5862
              weighted avg       0.60      0.60      0.59      5862
 ```
+</details>
 
 ## Results
 
-![Inference](val_preds.png)
+![Inference](assets/val_preds.png)
 
 ## Usage
 
