@@ -12,8 +12,6 @@ def convert_to_onnx(model: nn.Module, dummy: torch.Tensor, device: torch.device,
     model.eval()
     model.to(device)
 
-    # x = torch.randn(1, 3, 224, 224, requires_grad=True, device=device)
-
     torch.onnx.export(model,               
                     dummy,
                     path, 
