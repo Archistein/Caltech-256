@@ -111,7 +111,7 @@ I used various augmentation techniques (such as ShiftScaleRotate, Blur, GridDist
 
 ## Training results
 
-The goal was to achieve 0.6+ accuracy on the validation set.
+The goal was to achieve 0.6+ accuracy on the validation set without any pretrained weights.
 
 ![Accuracy history](assets/accuracy_hist.png)
 
