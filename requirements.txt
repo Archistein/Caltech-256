@@ -1,0 +1,10 @@
+albumentations==1.4.17
+matplotlib==3.9.2
+numpy==2.1.2
+onnxruntime==1.19.2
+onnxruntime_gpu==1.19.2
+opencv_python_headless==4.10.0.84
+scikit_learn==1.5.2
+timm==0.9.7
+torch==2.4.1
+tqdm==4.66.4
