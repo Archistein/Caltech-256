@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import timm
-from turtle import forward
 from typing import Optional
 
 

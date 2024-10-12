@@ -25,7 +25,7 @@ class Caltech256(data.Dataset):
 
         return image, int(target)
     
-    def get_transforms():
+    def get_transforms() -> A.Compose:
         return {
             'train': A.Compose([
                 A.Resize(width=256, height=256),
