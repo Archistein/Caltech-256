@@ -24,7 +24,7 @@ def main() -> None:
     parser.add_argument('-t', '--train', help='switch to the training mode', action='store_true')  
     parser.add_argument('-b', '--batch_size', help='set batch size', type=int, default=16)
     parser.add_argument('-e', '--epoch', help='set epochs number', type=int, default=100)
-    parser.add_argument('-l', '--learning_rate', help='set learning rate', type=int, default=2e-3)
+    parser.add_argument('-l', '--learning_rate', help='set learning rate', type=float, default=2e-3)
     parser.add_argument('-p', '--params_path', help='set path to pretrained params', default='params/params.pt')  
 
     args = parser.parse_args()
@@ -37,6 +37,8 @@ def main() -> None:
 
     random.seed(42)
     torch.manual_seed(42)
+    torch.cuda.manual_seed(42)
+    torch.backends.cudnn.deterministic = True
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
